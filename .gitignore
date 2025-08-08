@@ -166,4 +166,10 @@ service_accounts/
 # Ignore the Jupyter notebook file
 multi_tools.ipynb
 
-chroma_db/
+
+
+
+venv/
+logs/
+ANIME_RECOMMENDER.egg-info/
+.env
