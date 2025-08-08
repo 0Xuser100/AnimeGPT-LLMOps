@@ -166,4 +166,4 @@ service_accounts/
 # Ignore the Jupyter notebook file
 multi_tools.ipynb
 
-chromadb/
+chroma_db/

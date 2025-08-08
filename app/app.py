@@ -10,7 +10,7 @@ load_dotenv()
 def init_pipeline():
     return AnimeRecommendationPipeline()
 
-pipeline=init_pipeline()
+pipeline = init_pipeline()
 
 st.title("Anime Recommender System")
 
@@ -20,3 +20,5 @@ if query:
         response = pipeline.recommend(query)
         st.markdown("### Recommendations")
         st.write(response)
+
+
