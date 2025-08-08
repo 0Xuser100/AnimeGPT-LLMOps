@@ -1,7 +1,5 @@
 # Anime Recommender 🎌
-
-An intelligent anime recommendation system that uses natural language processing and machine learning to suggest anime based on user preferences and synopsis analysis.
-
+Production-ready anime recommendation system showcasing end-to-end LLMOps: automated data pipelines, vector embeddings, LLM integration, and scalable deployment
 ## Quick Start
 
 ### Clone the Repository
