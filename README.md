@@ -1,9 +1,37 @@
 
 # LLMOps Pipeline – Anime Recommender 🎌
 
-A production-ready **LLMOps** project demonstrating an **end-to-end AI-powered recommendation pipeline** — from data processing to vector search, LLM integration, and scalable deployment via **Docker** and **Kubernetes**.
+![AI Anime Recommender Workflow](./AI+Anime+Recommender+Workflow.png)
 
-This project uses **LangChain**, **ChromaDB**, **Hugging Face embeddings**, and **Groq LLM** to deliver **personalized anime recommendations** via a **Streamlit** web app.
+## 📌 Project Overview
+
+The diagram above illustrates the **end-to-end AI Anime Recommender pipeline**:
+
+1. **Project Setup**  
+   - **Groq API** & **Hugging Face API**: Provide the LLM and embedding models for recommendations.  
+   - **Virtual Environment**: Isolate dependencies for reproducibility.  
+   - **Logging** & **Custom Exception**: Ensure reliable debugging and error handling.  
+   - **Project Structure**: Organized for scalability and maintainability.  
+
+2. **Core Code**  
+   - **Configuration**: Load environment variables and API keys.  
+   - **Data Loader**: Preprocess anime datasets.  
+   - **ChromaDB**: Store vector embeddings for semantic search.  
+   - **Prompt Templates**: Shape how the LLM generates recommendations.  
+   - **Recommender Class**: Main logic for retrieving and ranking results.  
+   - **Train & Recommend**: Generate tailored anime suggestions.
+
+3. **Deployment**  
+   - **Streamlit App**: Web-based user interface.  
+   - **Dockerfile**: Containerization for portability.  
+   - **Kubernetes (K8s)**: Orchestration for scalable deployment.  
+   - **GCP VM**: Cloud infrastructure hosting.  
+   - **GitHub Integration**: Version control and CI/CD hooks.  
+   - **Grafana Cloud**: Optional monitoring for performance metrics.
+
+---
+
+
 
 ---
 

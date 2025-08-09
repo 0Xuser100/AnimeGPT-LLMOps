@@ -8,11 +8,14 @@ load_dotenv()
 
 logger = get_logger(__name__)
 
+
 def main():
     try:
         logger.info("Starting to build pipeline...")
 
-        loader = AnimeDataLoader("data/anime_with_synopsis.csv" , "data/anime_updated.csv")
+        loader = AnimeDataLoader(
+            "data/anime_with_synopsis.csv", "data/anime_updated.csv"
+        )
         processed_csv = loader.load_and_process()
 
         logger.info("Data  loaded and processed...")
@@ -24,9 +27,9 @@ def main():
 
         logger.info("Pipelien built sucesfuly....")
     except Exception as e:
-            logger.error(f"Failed to execute pipeline {str(e)}")
-            raise CustomException("Error during pipeline " , e)
-    
-if __name__=="__main__":
-     main()
+        logger.error(f"Failed to execute pipeline {str(e)}")
+        raise CustomException("Error during pipeline ", e)
 
+
+if __name__ == "__main__":
+    main()

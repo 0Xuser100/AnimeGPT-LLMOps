@@ -1,5 +1,6 @@
 from langchain.prompts import PromptTemplate
 
+
 def get_anime_prompt():
     template = """
 You are an expert anime recommender. Your job is to help users find the perfect anime based on their preferences.
