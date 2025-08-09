@@ -1,3 +1,5 @@
+# for streamlit cloude put pip in requirements.txt
+pip==25.2
 langchain==0.3.27
 langchain_community==0.3.27
 langchain_groq==0.3.6
@@ -8,3 +10,7 @@ pandas==2.3.1
 python-dotenv==1.1.1
 sentence-transformers==5.0.0
 langfuse==3.2.3
+-e . # Editable install for local development
+# This line allows for local development with the package in editable mode.
+
+
