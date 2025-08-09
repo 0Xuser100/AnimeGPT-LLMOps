@@ -1,5 +1,6 @@
 # for streamlit cloude put pip in requirements.txt
 pip==25.2
+pysqlite3-binary>=0.5.0   # Modern sqlite replacement
 langchain==0.3.27
 langchain_community==0.3.27
 langchain_groq==0.3.6
