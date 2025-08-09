@@ -6,27 +6,27 @@ from pipeline.pipeline import AnimeRecommendationPipeline
 st.set_page_config(page_title="Anime Recommender", page_icon="🎌", layout="wide")
 
 # ---- Minimal custom CSS (cards, spacing, dark-friendly) ----
-st.markdown(
-    """
+# Make the sidebar wider and increase UI sizes
+st.markdown("""
 <style>
-/* Page */
-.block-container {padding-top: 2rem; padding-bottom: 2rem; max-width: 1100px;}
-/* Headline gradient */
-.hero-title {font-size: 2.2rem; font-weight: 800; 
-  background: linear-gradient(90deg, #8b5cf6, #06b6d4);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-/* Subtle cards */
-.card {border-radius: 16px; padding: 1.1rem 1.2rem; border: 1px solid rgba(255,255,255,0.08);}
-.card:hover {border-color: rgba(99,102,241,0.35);}
-.badge {font-size: 0.78rem; padding: .25rem .55rem; border-radius: 999px; 
-  background: rgba(99,102,241,.15); border: 1px solid rgba(99,102,241,.25);}
-.help {opacity: .8; font-size: .9rem;}
-.small {opacity: .75; font-size: .85rem;}
-footer {visibility: hidden;}
+/* Wider sidebar */
+section[data-testid="stSidebar"] {width: 360px !important; min-width: 360px !important;}
+/* Tighter padding inside the sidebar */
+section[data-testid="stSidebar"] .block-container {padding: 1.2rem 1rem !important;}
+/* Bigger labels and helper text in the sidebar */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] p {font-size: 1rem !important; line-height: 1.35;}
+/* Bigger inputs/buttons in the sidebar */
+section[data-testid="stSidebar"] [data-baseweb],
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] textarea {font-size: 1rem !important;}
+section[data-testid="stSidebar"] button {font-size: 1rem !important; padding: .55rem .8rem;}
+/* (Optional) bump main title a bit too */
+h1 {font-size: 2.2rem;}
 </style>
-""",
-    unsafe_allow_html=True,
-)
+""", unsafe_allow_html=True)
+
 
 
 # ---- Lazy init pipeline (keeps cold start fast) ----
